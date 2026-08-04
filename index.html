@@ -165,6 +165,81 @@
             </h3>
             
             <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- ========================================== -->
+                <!-- ADDED: PROJECT 3 CARD (WEB PROXY & IPC)    -->
+                <!-- ========================================== -->
+                <div class="bg-brand-card rounded-lg border border-slate-700 overflow-hidden hover:-translate-y-1 transition-transform duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <i class="fa-solid fa-network-wired text-3xl text-brand-light"></i>
+                            <a href="https://github.com/Jacob-Smith-Dev" target="_blank" class="text-slate-400 hover:text-white"><i class="fa-brands fa-github text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Multi-Process Web Proxy & IPC Cache</h4>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Architected a multi-process file retrieval system consisting of a multi-threaded web proxy and a local cache daemon[cite: 3]. Bridged processes entirely through POSIX IPC mechanisms, utilizing message queues for command channels, shared memory (`mmap`) for data transfer, and semaphores for strict read/write synchronization[cite: 3]. Implemented a condition variable queue for shared memory segments to handle high-traffic spikes without dropping client connections[cite: 3]. Utilized the libcurl API to stream remote HTTP server payloads directly to clients, avoiding memory-intensive dynamic heap allocations[cite: 3].
+                        </p>
+                        <ul class="flex flex-wrap gap-2 text-xs font-mono">
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">C</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">POSIX IPC</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">Shared Memory</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">libcurl</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ========================================== -->
+                <!-- END OF ADDED PROJECT 3 CARD                -->
+                <!-- ========================================== -->
+
+                <!-- ========================================== -->
+                <!-- ADDED: PROJECT 1 CARD (MTGF SERVER)        -->
+                <!-- ========================================== -->
+                <div class="bg-brand-card rounded-lg border border-slate-700 overflow-hidden hover:-translate-y-1 transition-transform duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <i class="fa-solid fa-server text-3xl text-brand-light"></i>
+                            <a href="https://github.com/Jacob-Smith-Dev" target="_blank" class="text-slate-400 hover:text-white"><i class="fa-brands fa-github text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Multithreaded Getfile Server (MTGF)</h4>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Developed a concurrent client-server file retrieval system using a boss-worker thread pool model[cite: 2]. Engineered clean thread shutdown by injecting "poison pills" (NULL pointers) into the work queue to prevent deadlocks on `pthread_cond_wait`[cite: 2]. Replaced standard reads with `pread()` to guarantee thread-safe, lock-free concurrent disk I/O when multiple threads access the same file descriptor[cite: 2].
+                        </p>
+                        <ul class="flex flex-wrap gap-2 text-xs font-mono">
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">C</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">Pthreads</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">Sockets</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">Concurrency</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ========================================== -->
+                <!-- END OF ADDED PROJECT 1 CARD                -->
+                <!-- ========================================== -->
+
+                <!-- ========================================== -->
+                <!-- ADDED: PROJECT 4 CARD (DFS)        -->
+                <!-- ========================================== -->
+                <div class="bg-brand-card rounded-lg border border-slate-700 overflow-hidden hover:-translate-y-1 transition-transform duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <i class="fa-solid fa-server text-3xl text-brand-light"></i>
+                            <a href="https://github.com/Jacob-Smith-Dev" target="_blank" class="text-slate-400 hover:text-white"><i class="fa-brands fa-github text-xl"></i></a>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Distributed File Synchronization Engine</h4>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Architected a distributed file synchronization system (DFS) utilizing C++ and gRPC[cite: 1]. Designed a robust client-server RPC protocol and an autonomous, multithreaded synchronization engine[cite: 1]. Overcame complex challenges including C++17 timestamp conversions, path sanitization, and strict concurrency control using mutexes to prevent race conditions during live synchronization[cite: 1].
+                        </p>
+                        <ul class="flex flex-wrap gap-2 text-xs font-mono">
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">C++17</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">gRPC</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">Multithreading</li>
+                            <li class="bg-brand-dark text-brand-light px-2 py-1 rounded">RPC</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ========================================== -->
+                <!-- END OF ADDED PROJECT 1 CARD                -->
+                <!-- ========================================== -->
                 
                 <div class="bg-brand-card rounded-lg border border-slate-700 overflow-hidden hover:-translate-y-1 transition-transform duration-300">
                     <div class="p-6">
